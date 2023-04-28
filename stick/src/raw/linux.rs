@@ -580,7 +580,6 @@ impl Controller {
                 resolution: 0,
             }
         };
-        let a = unsafe { a.assume_init() };
         let norm = (a.maximum as f64 - a.minimum as f64) * 0.5;
         let zero = a.minimum as f64 + norm;
         // Invert so multiplication can be used instead of division
